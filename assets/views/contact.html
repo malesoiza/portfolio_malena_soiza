@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Simon-E | Antimodel</title>
+    <html>
+
+<body>
+    <div class="contenedor">
+        <!--MENU-->
+        <header>
+            <!--Menu-->
+            <nav class="navbar flex-row container">
+                <!--Imagen cabecera-->
+                <picture class="logo">
+                    <a href="../../index.html"><img src="../img/LOGO.png" id="shortcut" alt="logo de simone">
+                </picture>
+                <ul class="menu flex-row">
+                    <li class="menu__item">
+                        <a href="../../index.html" class="menu__link">HOME</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../views/about.html" class="menu__link"> ABOUT ME </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../views/proyects.html" class="menu__link"> PROYECTS </a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="../views/cyberpunk.html" class="sub-menu__link"> WHAT'S CYBERPUNK? </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../views/contact.html" class="menu__link"> CONTACT </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenedor-contact flex-row">
+            <!--CONTACTO-->
+            <div class="column">
+                <div id="contact">
+
+                    <h1>CONTACT</h1>
+
+                </div>
+                <div class="formulario__item">
+                    <div class="column-2">
+                        <form action="/action_page.php">
+                            <input type="text" class="data__item__1" name="firstname" placeholder="NAME"><br>
+                            <input type="email" class="data__item__2" name="email" placeholder="EMAIL"><br>
+                            <textarea class="data__message" name="subject" placeholder="Your message..."
+                                style="height:170px"></textarea><br>
+                            <input type="button" value="SUBMIT" id="send"><br>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="img-column">
+                <img src="../img/tech-img-2.jpg" alt="foto contacto" class="img__item">
+            </div>
+
+        </main>
+
+        <!-- Formulario -->
+        <footer id="footer">
+            <p class="foot1"> If you want to break the norms,</p>
+            <p class="foot2"> SUSCRIBE</p>
+            <form action="/action_page.php">
+                <div class="email">
+                    <input type="email" id="fname" placeholder="YOUR EMAIL"><br>
+                    <div class="button">
+                        <input type="button" value="SUBMIT" id="btn">
+                    </div>
+                </div>
+            </form>
+            <p class="copy"> © 2022 Simon-E.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
