@@ -52,13 +52,28 @@ html {
 /*HOME PAGE*/
 /*Color de fondo*/
 body {
-    background-image: linear-gradient(to bottom, black, rgb(29, 29, 29));
+    background-image: linear-gradient(45deg, #000000, #1b1b1b, #3d5c52);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
 
     /*por si pongo una imagen de fondo
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;*/
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 /*menu*/
@@ -160,6 +175,7 @@ a:active {
     padding: 60px 60px 60px 60px;
 }
 
+
 /*Titulo*/
 .text-container .inner-container .titulo {
     font-family: var(--font-uno);
@@ -172,15 +188,10 @@ a:active {
     text-shadow: #FFFFFF 2px 2px;
     margin: 150px;
     transform: translateY(5rem);
-    animation-name: example;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-
 }
-@keyframes example {
-    from {top: 0px;}
-    to {top: 200px;}
-  }
+
+
+
 .text-container .inner-container {
     display: grid;
 }
@@ -221,6 +232,9 @@ a:active {
     margin: 0 auto;
 
 }
+
+
+
 
 img {
     width: 100%;
