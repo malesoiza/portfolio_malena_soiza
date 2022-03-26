@@ -172,9 +172,15 @@ a:active {
     text-shadow: #FFFFFF 2px 2px;
     margin: 150px;
     transform: translateY(5rem);
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 
 }
-
+@keyframes example {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
 .text-container .inner-container {
     display: grid;
 }
