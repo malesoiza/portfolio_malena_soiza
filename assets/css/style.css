@@ -40,10 +40,10 @@ a {
     flex-direction: column;
 }
 
-.container {
+/*.container {
     max-width: 1980px;
     margin: 0 auto;
-}
+}*/
 
 html {
     font-size: 62.5%;
@@ -68,9 +68,11 @@ body {
     0% {
         background-position: 0 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0 50%;
     }
@@ -423,7 +425,7 @@ main .proyects {
 
 }
 
-main .proyects .proyect-title {
+body .contenedor main .proyects .proyect-title {
     font-family: var(--font-uno);
     font-style: normal;
     font-weight: normal;
@@ -501,14 +503,13 @@ main .proyects .proyects__4 .proyect__text__2 {
 /*titulos principales*/
 .cyber {
     background-color: #1b1b1b;
-    margin: 15px 20px 25px 30px;
 }
 
 .cyber .cyber-article .cyber__title {
     font-family: var(--font-uno);
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 0px;
     text-align: center;
     text-shadow: #FFFFFF 2px 2px;
@@ -521,7 +522,7 @@ main .proyects .proyects__4 .proyect__text__2 {
     font-family: var(--font-uno);
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 0px;
     text-align: center;
     text-shadow: #FFFFFF 2px 2px;
