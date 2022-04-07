@@ -48,10 +48,12 @@
                 <div class="left"></div>
                 <div class="right">
                     <h2>CONTACT</h2>
-                    <input type="text" class="field" name="firstname" placeholder="NAME">
-                    <input type="email" class="field" name="email" placeholder="NAME">
-                    <textarea class="field" placeholder="Your message..." style="height:170px"></textarea>
-                    <button class="send_btn"> SUBMIT</button>
+                    <form action="/action_page.php">
+                        <input type="text" class="field" name="firstname" placeholder="NAME">
+                        <input type="email" class="field" name="email" placeholder="EMAIL">
+                        <textarea class="field" placeholder="Your message..." style="height:170px"></textarea>
+                        <input type="button" value="SUBMIT" class="send_btn">
+                    </form>
                 </div>
             </div>
         </div>
