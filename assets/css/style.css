@@ -111,9 +111,10 @@ nav ul {
     list-style: none;
 }
 
-/*header .menu__item {
+header .menu__item {
     border: 2px solid var(--segundo);
-}*/
+
+}    
 
 .menu .menu__item .menu__link {
     font-size: 1.5em;
@@ -156,7 +157,8 @@ a:active {
     text-decoration: none;
     justify-content: space-around;
     background-color: #000000;
-}
+}*/
+
 
 .contenedor {
     width: 100%;
@@ -902,9 +904,3 @@ main .proyects .proyects__4 .proyect__text__2 {
         height: auto;
     }
 }
-
-
-
-
-
-/*# sourceMappingURL=style.css.map */

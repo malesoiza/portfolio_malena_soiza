@@ -1,13 +1,6 @@
-body {
-    background-image: linear-gradient(45deg, #000000, #1b1b1b, #3d5c52);
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 10s ease-in-out infinite;
-
-}
-
 /*ABOUT ME PAGE*/
 
+/*Titulo*/
 .about_form {
     position: relative;
     display: flex;
@@ -25,6 +18,13 @@ body {
         justify-content: left;
         align-items: left;
         text-align: left;
+
+        &:after {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
 
         .datos__item {
             font-family: var(--font-uno);
@@ -65,12 +65,76 @@ body {
             height: 100%;
             background-size: cover;
         }
+
+    }
+}
+
+@media(min-width:480px) {
+   
+    /*ABOUT ME*/
+    main .datos .datos__item {
+        font-size: 30px;
     }
 
-    .datos:after {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+    main .datos .datos__item__item {
+        font-size: 20px;
+    }
+
+    main .datos .datos__item__item__item {
+        font-size: 10px;
+    }
+
+
+}
+
+@media(min-width:768px) {
+    
+    /*ABOUT ME*/
+    main .datos .datos__item {
+        font-size: 80px;
+    }
+
+    main .datos .datos__item__item {
+        font-size: 20px;
+    }
+
+    main .datos .datos__item__item__item {
+        font-size: 10px;
+    }
+
+
+}
+
+@media(min-width:1024px) {
+
+    /*ABOUT ME*/
+    main {
+        .datos {
+            .datos__item {
+                font-size: 120px;
+            }
+
+            .datos__item__item {
+                font-size: 30px;
+            }
+
+            .datos__item__item__item {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    .about_form {
+        .datos {
+            grid-template-columns: 1fr;
+        }
+
+        .datos__img {
+            height: 500px;
+        }
     }
 }
