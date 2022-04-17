@@ -10,7 +10,7 @@ footer {
 
     /*if you want to break the norms*/
     .foot1 {
-        font-family: var(--font-dos);
+        font-family: $font-dos;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -22,7 +22,7 @@ footer {
 
     /*suscribe*/
     .foot2 {
-        font-family: var(--font-uno);
+        font-family: $font-uno;
         font-style: normal;
         font-weight: normal;
         font-size: 50px;
@@ -37,7 +37,7 @@ footer {
 
     #fname {
         position: static;
-        font-family: var(--font-dos);
+        font-family: $font-dos;
         font-style: normal;
         font-weight: bold;
         font-size: 10px;
@@ -55,7 +55,7 @@ footer {
 
     /*boton submit*/
     #btn {
-        font-family: var(--font-dos);
+        font-family: $font-dos;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -70,16 +70,15 @@ footer {
         margin-left: auto;
         margin-right: auto;
         transition: .3s;
-    }
 
-    #btn:hover {
-        background-color: #b9b9b9;
+        #btn:hover {
+            background-color: #b9b9b9;
+        }
     }
-
 
     /*copyright*/
     .copy {
-        font-family: var(--font-dos);
+        font-family: $font-dos;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;

@@ -5,7 +5,7 @@
 }
 
 .cyber .cyber-article .cyber__title {
-    font-family: var(--font-uno);
+    font-family: $font-uno;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -18,7 +18,7 @@
 }
 
 .cyber .tech-article .tech__title {
-    font-family: var(--font-uno);
+    font-family: $font-uno;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -32,7 +32,7 @@
 
 /*subs*/
 .cyber .cyber-article .cyber__sub {
-    font-family: var(--font-uno);
+    font-family: $font-uno;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -44,7 +44,7 @@
 }
 
 .cyber .tech-article .tech__item .tech__sub {
-    font-family: var(--font-uno);
+    font-family: $font-uno;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -58,7 +58,7 @@
 
 /*textos*/
 .cyber .cyber-article .info {
-    font-family: var(--font-dos);
+    font-family: $font-dos;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -71,7 +71,7 @@
 }
 
 .cyber .tech-article .info {
-    font-family: var(--font-dos);
+    font-family: $font-dos;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

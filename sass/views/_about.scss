@@ -11,7 +11,7 @@
     padding: 20px 100px;
 
     .datos {
-        background-color: var(--primero);
+        background-color: $primero;
         max-width: 1280px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -27,7 +27,7 @@
         }
 
         .datos__item {
-            font-family: var(--font-uno);
+            font-family: $font-uno;
             font-style: normal;
             font-weight: normal;
             font-size: 80px;
@@ -39,7 +39,7 @@
         }
 
         .datos__item__item {
-            font-family: var(--font-dos);
+            font-family: $font-dos;
             font-style: normal;
             font-weight: bold;
             font-size: 30px;
@@ -50,7 +50,7 @@
         }
 
         .datos__item__item__item {
-            font-family: var(--font-dos);
+            font-family: $font-dos;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -63,6 +63,7 @@
 
         .datos__img {
             height: 100%;
+            max-width: 100%;
             background-size: cover;
         }
 
@@ -91,7 +92,7 @@
     
     /*ABOUT ME*/
     main .datos .datos__item {
-        font-size: 80px;
+        font-size: 50px;
     }
 
     main .datos .datos__item__item {
@@ -127,14 +128,3 @@
 }
 
 
-@media screen and (max-width:880px) {
-    .about_form {
-        .datos {
-            grid-template-columns: 1fr;
-        }
-
-        .datos__img {
-            height: 500px;
-        }
-    }
-}
