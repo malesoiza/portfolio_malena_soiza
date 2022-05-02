@@ -2,7 +2,8 @@
 /*titulo*/
 main .proyects {
     background-color: #1b1b1b;
-    margin: 15px 20px 25px 30px;
+    max-width: 1280px;
+    margin: 0 auto;
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(2, 1fr);
@@ -18,7 +19,7 @@ body .contenedor main .proyects .proyect-title {
     font-family: $font-uno;
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 100px;
     line-height: 0px;
     text-align: center;
     text-shadow: #FFFFFF 2px 2px;
@@ -89,74 +90,12 @@ main .proyects .proyects__4 .proyect__text__2 {
 }
 
 
-
-@media(min-width:768px) {
-    .contenedor .text-container .inner-container .titulo {
-        font-size: 80px;
-        margin: 150px;
-    }
-
-    .contenedor .text-container {
-        background-image: url(../img/titulo.png);
-        background-size: 800px;
-    }
-
-    .contenedor .text-container .inner-container .subtitulo {
-        font-size: 40px;
-    }
-
-    .contenedor .imagenes .contenedor-img {
-        grid-template-columns: repeat(3, 33.3%);
-
-    }
-
-    .contenedor .parrafo .texto {
-        font-size: 30px;
-    }
-
-    footer .footer .foot1 {
-        font-size: 18px;
-    }
-
-    /*ABOUT ME*/
-    main .datos .datos__item {
-        font-size: 80px;
-    }
-
-    main .datos .datos__item__item {
-        font-size: 20px;
-    }
-
-    main .datos .datos__item__item__item {
-        font-size: 10px;
-    }
-
-
-}
-
 @media screen and (max-width:880px) {
-    .proyects .proyect-title h1 {
-        grid-template-columns: 1fr;
-    }
+    main .proyects {
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
 
-    .proyects .proyects__2 h2 {
-        grid-template-columns: 1fr;
-    }
-
-    .proyects .proyects__2 .proyect__text__1{
-        grid-template-columns: 1fr;
-    }
-
-    .proyects .proyects__1 .proyect__img__1  {
-        height: auto;
-    }
-
-    .proyects .proyects__4 .proyect__text__2 {
-        grid-template-columns: 1fr;
-    }
-    
-
-    .proyects .proyects__3 .proyect__img__2  {
-        height: auto;
     }
 }
