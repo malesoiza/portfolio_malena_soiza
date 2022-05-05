@@ -25,10 +25,11 @@ header {
                 border-bottom: 2px solid cyan;
             }
 
-            &:hover {
-                color: var(--cuarto);
+            & a:hover {
+                color: $cuarto;
                 transition: color .2s ease-in-out;
             }
+            
         }
 
         .menu__link {
@@ -38,6 +39,7 @@ header {
             font-weight: bold;
             padding: 1rem;
         }
+        
     }
 
 }
@@ -54,7 +56,9 @@ nav ul {
 .sub-menu {
     display: none;
     position: absolute;
+    z-index: 1000;
     transition: all .2s ease-in-out;
+    background-color: #000000;
 }
 
 .sub-menu .sub-menu__item .sub-menu__link {
@@ -63,7 +67,8 @@ nav ul {
     font-family: var(--font-dos);
     font-style: normal;
     font-weight: bold;
-    background-color: var(--segundo);
+    background-color: $segundo;
+    top: 100%;
 
 }
 
