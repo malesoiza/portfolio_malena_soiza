@@ -1,5 +1,6 @@
 header {
     background-color: #000000;
+    width: 100%;
 
     .navbar {
         min-height: 10vh;
@@ -29,7 +30,7 @@ header {
                 color: $cuarto;
                 transition: color .2s ease-in-out;
             }
-            
+
         }
 
         .menu__link {
@@ -39,10 +40,12 @@ header {
             font-weight: bold;
             padding: 1rem;
         }
-        
+
     }
 
+
 }
+
 
 nav ul {
     list-style: none;
@@ -82,18 +85,22 @@ a:active {
     background-color: #000000;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        padding: 2em;
+@media screen and (max-width: 880px) {
+    .nav__label {
+        display: block;
+        cursor: pointer;
+    }
 
-        .navbar {
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .menu {
-            font-size: .8em;
-        }
-
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: #000000;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -1,130 +1,69 @@
 /*ABOUT ME PAGE*/
 
-/*Titulo*/
 .about_form {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
 
-    .datos {
-        background-color: $primero;
-        max-width: 1280px;
+    section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: left;
-        align-items: left;
-        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        min-height: 90vh;
+        width: 90vw;
+        margin: 0 auto;
 
-        &:after {
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
+        .img_about {
+            background: url(../img/dazed_felix.jpeg) center/cover no-repeat;
         }
 
-        .datos__item {
-            font-family: $font-uno;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 6vw;
-            line-height: 0px;
-            text-shadow: #FFFFFF 2px 2px;
-            margin-top: 100px;
-            margin-left: 30px;
-            color: #53ECB9;
-        }
+        .content_about {
+            background-color: $primero;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-        .datos__item__item {
-            font-family: $font-dos;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 2.5vw;
-            line-height: 30px;
-            margin-top: 80px;
-            margin-left: 30px;
-            color: #FFFFFF;
-        }
-
-        .datos__item__item__item {
-            font-family: $font-dos;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 2vw;
-            line-height: 1;
-            margin: 15px 20px 25px 30px;
-            padding-right: 20px;
-
-            color: #FFFFFF;
-        }
-
-        .imagen-about {
-            height: 100%;
-            background-image: url(../img/lee_felix_5.png);
-            background-size: cover;
-        }
-
-    }
-}
-
-@media(min-width:480px) {
-   
-    /*ABOUT ME*/
-    main .datos .datos__item {
-        font-size: 30px;
-    }
-
-    main .datos .datos__item__item {
-        font-size: 20px;
-    }
-
-    main .datos .datos__item__item__item {
-        font-size: 10px;
-    }
-
-
-}
-
-@media(min-width:768px) {
-    
-    /*ABOUT ME*/
-    main .datos .datos__item {
-        font-size: 50px;
-    }
-
-    main .datos .datos__item__item {
-        font-size: 20px;
-    }
-
-    main .datos .datos__item__item__item {
-        font-size: 10px;
-    }
-
-
-}
-
-@media(min-width:1024px) {
-
-    /*ABOUT ME*/
-    main {
-        .datos {
-            .datos__item {
-                font-size: 120px;
+            h2 {
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                font-family: $font-uno;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 6vw;
+                text-shadow: #FFFFFF 2px 2px;
+                color: #53ECB9;
+                padding-top: 50px;
             }
 
-            .datos__item__item {
-                font-size: 30px;
-            }
-
-            .datos__item__item__item {
-                font-size: 20px;
-                line-height: 30px;
+            p {
+                padding-bottom: 15px;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+                font-family: $font-dos;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 1;
+                color: #FFFFFF;
             }
         }
     }
 }
 
 
+@media(max-width:880px) {
+    .about_form section {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .img_about {
+        height: 100vh;
+    }
+
+    .content_about {
+        height: 100vh;
+    }
+
+}
