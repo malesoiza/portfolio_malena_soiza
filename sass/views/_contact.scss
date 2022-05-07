@@ -19,7 +19,7 @@
     }
 
     .contact-box {
-        max-width: 1000px;
+        max-width: 1280px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -29,7 +29,7 @@
 
         .left {
             height: 100%;
-            background-image: url(../img/felix_about.jpg);
+            background-image: url(../img/felix_contact.jpg);
             background-size: cover;
         
         }

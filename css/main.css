@@ -53,8 +53,7 @@ a {
 
 /* partials */
 header {
-  background-color: #000000;
-  width: 100%; }
+  background-color: #000000; }
   header .navbar {
     min-height: 10vh;
     padding: 0 1rem;
@@ -85,7 +84,7 @@ header {
         transition: color .2s ease-in-out; }
     header .menu .menu__link {
       font-size: 1.5em;
-      font-family: var(--font-dos);
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
       font-weight: bold;
       padding: 1rem; }
@@ -121,21 +120,14 @@ a:active {
   justify-content: space-around;
   background-color: #000000; }
 
-@media screen and (max-width: 880px) {
-  .nav__label {
-    display: block;
-    cursor: pointer; }
-  .nav__menu {
-    position: fixed;
-    top: 80px;
-    bottom: 0;
-    background-color: #000000;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center; } }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2em; }
+    header .navbar {
+      justify-content: center;
+      flex-direction: column; }
+    header .menu {
+      font-size: .8em; } }
 
 /*Footer*/
 footer {
@@ -350,7 +342,7 @@ footer {
     width: 90vw;
     margin: 0 auto; }
     .about_form section .img_about {
-      background: url(../img/dazed_felix.jpeg) center/cover no-repeat; }
+      background: url(../img/felix_about.png) center/cover no-repeat; }
     .about_form section .content_about {
       background-color: #1b1b1b;
       display: flex;
@@ -475,120 +467,113 @@ main .proyects .proyects__4 .proyect__text__2 {
 /*CYBERPUNK PAGE*/
 /*titulos principales*/
 .cyber {
-  background-color: #1b1b1b; }
-
-.cyber .cyber-article .cyber__title {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 0px;
+  background-color: #1b1b1b;
   text-align: center;
-  text-shadow: #000000 2px 2px;
-  margin-top: 50px;
-  margin-left: 30px;
-  color: #53ECB9; }
-
-.cyber .cyber-article .cyber__title1 {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 0px;
-  text-align: center;
-  text-shadow: #000000 2px 2px;
-  margin-top: 80px;
-  margin-left: 30px;
-  color: #ffffff; }
-
-.cyber .tech-article .tech__title {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 0px;
-  text-align: center;
-  text-shadow: #000000 2px 2px;
-  margin-top: 80px;
-  margin-left: 30px;
-  color: #ffffff; }
-
-.cyber .tech-article .tech__title1 {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 0px;
-  text-align: center;
-  text-shadow: #000000 2px 2px;
-  margin-top: 50px;
-  margin-left: 30px;
-  color: #53ECB9; }
-
-/*subs*/
-.cyber .cyber-article .cyber__sub {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 72px;
-  text-align: center;
-  margin-left: 30px;
-  color: #FFFFFF;
-  text-shadow: #000000 2px 2px; }
-
-.cyber .tech-article .tech__item .tech__sub {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 72px;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 30px;
-  color: #FFFFFF;
-  text-shadow: #000000 2px 2px; }
-
-/*textos*/
-.cyber .cyber-article .info {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  color: #d6d6d6;
-  margin-left: 30px;
-  transform: scale(0.9); }
-
-.cyber .tech-article .info {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  color: #d6d6d6;
-  margin-left: 30px;
-  transform: scale(0.9); }
-
-/*imagenes*/
-.cyber .cyber-article .cyber__img__1 {
-  width: 1300px;
-  left: 152px;
-  top: 244px;
-  padding: 0px 20px 0px 20px;
+  justify-content: center;
   align-items: center;
-  transform: scale(0.9); }
-
-.cyber .tech-article .cyber__img__2 {
-  width: 1300px;
-  height: 504px;
-  left: 152px;
-  top: 244px;
-  padding: 0px 20px 0px 20px;
-  align-items: center;
-  transform: scale(0.9); }
+  /*subs*/
+  /*textos*/
+  /*imagenes*/ }
+  .cyber .cyber-article .cyber__title {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    text-shadow: #000000 2px 2px;
+    margin-top: 50px;
+    margin-left: 30px 0;
+    color: #53ECB9; }
+  .cyber .cyber-article .cyber__title1 {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    text-shadow: #000000 2px 2px;
+    margin-top: 80px;
+    margin-left: 30px 0;
+    color: #ffffff; }
+  .cyber .tech-article .tech__title {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    text-shadow: #000000 2px 2px;
+    margin-top: 80px;
+    margin-left: 30px 0;
+    color: #ffffff; }
+  .cyber .tech-article .tech__title1 {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    text-shadow: #000000 2px 2px;
+    margin-top: 50px;
+    margin-left: 30px 0;
+    color: #53ECB9; }
+  .cyber .cyber-article .cyber__sub {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    margin-left: 30px 0;
+    color: #FFFFFF;
+    text-shadow: #000000 2px 2px; }
+  .cyber .tech-article .tech__item .tech__sub {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px 0;
+    color: #FFFFFF;
+    text-shadow: #000000 2px 2px; }
+  .cyber .cyber-article .info {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #d6d6d6;
+    margin-left: 30px 0;
+    transform: scale(0.9); }
+  .cyber .tech-article .info {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #d6d6d6;
+    margin-left: 30px 0;
+    transform: scale(0.9); }
+  .cyber .cyber-article .cyber__img__1 {
+    width: 1300px;
+    left: 152px;
+    top: 244px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+    transform: scale(0.9); }
+  .cyber .tech-article .cyber__img__2 {
+    width: 1300px;
+    height: 504px;
+    left: 152px;
+    top: 244px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+    transform: scale(0.9); }
 
 /*CONTACT PAGE*/
 .contenedore {
@@ -607,7 +592,7 @@ main .proyects .proyects__4 .proyect__text__2 {
     width: 100%;
     height: 100%; }
   .contenedore .contact-box {
-    max-width: 1000px;
+    max-width: 1280px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -616,7 +601,7 @@ main .proyects .proyects__4 .proyect__text__2 {
     background-color: #1b1b1b; }
     .contenedore .contact-box .left {
       height: 100%;
-      background-image: url(../img/felix_about.jpg);
+      background-image: url(../img/felix_contact.jpg);
       background-size: cover; }
     .contenedore .contact-box .right {
       padding: 25px 40px; }

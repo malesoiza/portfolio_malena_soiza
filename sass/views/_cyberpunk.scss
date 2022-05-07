@@ -2,128 +2,132 @@
 /*titulos principales*/
 .cyber {
     background-color: #1b1b1b;
-}
-
-.cyber .cyber-article .cyber__title {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 0px;
     text-align: center;
-    text-shadow: #000000 2px 2px;
-    margin-top: 50px;
-    margin-left: 30px;
-    color: #53ECB9;
-}
-
-.cyber .cyber-article .cyber__title1 {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 0px;
-    text-align: center;
-    text-shadow: #000000 2px 2px;
-    margin-top: 80px;
-    margin-left: 30px;
-    color: #ffffff;
-}
-
-.cyber .tech-article .tech__title {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 0px;
-    text-align: center;
-    text-shadow: #000000 2px 2px;
-    margin-top: 80px;
-    margin-left: 30px;
-    color: #ffffff;
-}
-
-.cyber .tech-article .tech__title1 {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 0px;
-    text-align: center;
-    text-shadow: #000000 2px 2px;
-    margin-top: 50px;
-    margin-left: 30px;
-    color: #53ECB9;
-}
-
-/*subs*/
-.cyber .cyber-article .cyber__sub {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: center;
-    margin-left: 30px;
-    color: #FFFFFF;
-    text-shadow: #000000 2px 2px;
-}
-
-.cyber .tech-article .tech__item .tech__sub {
-    font-family: $font-uno;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 30px;
-    color: #FFFFFF;
-    text-shadow: #000000 2px 2px;
-}
-
-/*textos*/
-.cyber .cyber-article .info {
-    font-family: $font-dos;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    color: #d6d6d6;
-
-    margin-left: 30px;
-    transform: scale(.9);
-}
-
-.cyber .tech-article .info {
-    font-family: $font-dos;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    color: #d6d6d6;
-    margin-left: 30px;
-    transform: scale(.9);
-}
-
-/*imagenes*/
-.cyber .cyber-article .cyber__img__1 {
-    width: 1300px;
-    left: 152px;
-    top: 244px;
-    padding: 0px 20px 0px 20px;
+    justify-content: center;
     align-items: center;
-    transform: scale(0.9);
+
+    .cyber-article .cyber__title {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 0px;
+        text-align: center;
+        text-shadow: #000000 2px 2px;
+        margin-top: 50px;
+        margin-left: 30px 0;
+        color: #53ECB9;
+    }
+    
+    .cyber-article .cyber__title1 {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 0px;
+        text-align: center;
+        text-shadow: #000000 2px 2px;
+        margin-top: 80px;
+        margin-left: 30px 0;
+        color: #ffffff;
+    }
+    
+    .tech-article .tech__title {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 0px;
+        text-align: center;
+        text-shadow: #000000 2px 2px;
+        margin-top: 80px;
+        margin-left: 30px 0;
+        color: #ffffff;
+    }
+    
+    .tech-article .tech__title1 {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 0px;
+        text-align: center;
+        text-shadow: #000000 2px 2px;
+        margin-top: 50px;
+        margin-left: 30px 0;
+        color: #53ECB9;
+    }
+    
+    /*subs*/
+    .cyber-article .cyber__sub {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+        margin-left: 30px 0;
+        color: #FFFFFF;
+        text-shadow: #000000 2px 2px;
+    }
+    
+    .tech-article .tech__item .tech__sub {
+        font-family: $font-uno;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 30px 0;
+        color: #FFFFFF;
+        text-shadow: #000000 2px 2px;
+    }
+    
+    /*textos*/
+    .cyber-article .info {
+        font-family: $font-dos;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        color: #d6d6d6;
+    
+        margin-left: 30px 0;
+        transform: scale(.9);
+    }
+    
+    .tech-article .info {
+        font-family: $font-dos;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        color: #d6d6d6;
+        margin-left: 30px 0;
+        transform: scale(.9);
+    }
+    
+    /*imagenes*/
+    .cyber-article .cyber__img__1 {
+        width: 1300px;
+        left: 152px;
+        top: 244px;
+        padding: 0px 20px 0px 20px;
+        align-items: center;
+        transform: scale(0.9);
+    }
+    
+    .tech-article .cyber__img__2 {
+        width: 1300px;
+        height: 504px;
+        left: 152px;
+        top: 244px;
+        padding: 0px 20px 0px 20px;
+        align-items: center;
+        transform: scale(0.9);
+    }
 }
 
-.cyber .tech-article .cyber__img__2 {
-    width: 1300px;
-    height: 504px;
-    left: 152px;
-    top: 244px;
-    padding: 0px 20px 0px 20px;
-    align-items: center;
-    transform: scale(0.9);
-}
